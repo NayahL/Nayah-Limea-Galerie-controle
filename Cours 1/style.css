@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-ExtraBoldItalic.ttf) format ('truetype') font-italic font-weight-extra-bold,
+        url(./fonts/Poppins-SemiBold.ttf) format ('truetype') font-weight-semibold,
+        url(./fonts/Poppins-Medium.ttf) format ('truetype') font-weight-medium,
+        url(./fonts/Poppins-Regular.ttf) format ('truetype') font-weight-regular;
+}
+
+$ npm install animate.css import 'animate.css';
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 20s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 900ms;
+    --animate-delay: 2s;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(225, 225, 255);
+}
+
+
+header {
+    padding: 30px;
+    backdrop-filter: blur(3px);
+}
+
+
+.logo {
+    width: 100px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: rgb(249, 249, 255);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 242, 242);
+    /*background-color: rgb(169, 169, 255)*/
+}
+
+a {
+    color: rgb(249, 249, 255);
+}
+
+a:hover {
+    background-color: rgb(169, 169, 255);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    margin-top: 100px;
+    column-gap: 100px;
+}
+
+figure {
+    width: 420px;
+    /*position: relative;*/
+
+}
+
+figure:hover{
+    animation: toright 5s;
+}
+
+/*@keyframes toright {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        left: 200px;
+        top: 0px;
+    }
+}*/
+
+
+
+figcaption {
+    padding: 10px;
+    text-align: center;
+    color: #00A650;
+    /*color: rgba(2, 177, 28, 0.744);*/
+    backdrop-filter: blur(6px);
+}
+
+$ npm install animate.css import 'animate.css';
+
+.animate__animated.animate__fadeInLeft{
+    --animate-duration: 20s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 900ms;
+    --animate-delay: 4s;
+}
+
+figure>img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+footer {
+    background-color: blanchedalmond;
+    display: flex;
+    margin-top: 5%;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+
+}
+
+@media screen {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    figcaption {
+        font-size: 15px;
+    }
+
+}
